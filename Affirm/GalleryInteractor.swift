@@ -39,7 +39,8 @@ class GalleryInteractor: NSObject {
         print(page)
         let urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(GalleryInteractor.API_KEY)&text=\(text)&page=\(page)&extras=url_s&format=json&nojsoncallback=1"
         
-        let url = URL.init(string: urlString)!
+        guard let urlStringEncoded = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+            let url = URL.init(string: urlStringEncoded) else { return }
         
         urlSession.dataTask(with: url,
                             completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in

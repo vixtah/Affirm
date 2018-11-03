@@ -88,11 +88,9 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
                     cell.imageView.image = image
                 }
             }
-        })
-        
+        })   
         return cell
     }
-    
 }
 
 extension GalleryViewController: UISearchBarDelegate {
