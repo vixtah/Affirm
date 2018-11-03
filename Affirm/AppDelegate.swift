@@ -17,6 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let interactor = GalleryInteractor.init()
+        let viewController = GalleryViewController.init(interactor: interactor)
+        
+        let navigationController = UINavigationController.init(rootViewController: viewController)
+        
+        window!.rootViewController = navigationController
+        window!.makeKeyAndVisible()
+        
+        let sharedCache = URLCache.init(memoryCapacity: 500*1024*1024, // 500 MB
+            diskCapacity: 500*1024*1024, // 500 MB
+            diskPath: "nsurlcache")
+        URLCache.shared = sharedCache
+        sleep(1)
+        
         return true
     }
 

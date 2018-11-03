@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		57D1B44A218D1AB00056A75F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1B449218D1AB00056A75F /* AppDelegate.swift */; };
 		57D1B44C218D1AB00056A75F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1B44B218D1AB00056A75F /* ViewController.swift */; };
-		57D1B44F218D1AB00056A75F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D1B44D218D1AB00056A75F /* Main.storyboard */; };
 		57D1B452218D1AB00056A75F /* Affirm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57D1B450218D1AB00056A75F /* Affirm.xcdatamodeld */; };
 		57D1B454218D1AB20056A75F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D1B453218D1AB20056A75F /* Assets.xcassets */; };
 		57D1B457218D1AB20056A75F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D1B455218D1AB20056A75F /* LaunchScreen.storyboard */; };
+		57D1B45F218D27AC0056A75F /* GalleryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1B45E218D27AC0056A75F /* GalleryInteractor.swift */; };
+		57D1B461218D85B00056A75F /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1B460218D85B00056A75F /* GalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57D1B446218D1AB00056A75F /* Affirm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Affirm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D1B449218D1AB00056A75F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57D1B44B218D1AB00056A75F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		57D1B44E218D1AB00056A75F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57D1B451218D1AB00056A75F /* Affirm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Affirm.xcdatamodel; sourceTree = "<group>"; };
 		57D1B453218D1AB20056A75F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D1B456218D1AB20056A75F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57D1B458218D1AB20056A75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D1B45E218D27AC0056A75F /* GalleryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractor.swift; sourceTree = "<group>"; };
+		57D1B460218D85B00056A75F /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		57D1B448218D1AB00056A75F /* Affirm */ = {
 			isa = PBXGroup;
 			children = (
+				57D1B460218D85B00056A75F /* GalleryView.swift */,
 				57D1B449218D1AB00056A75F /* AppDelegate.swift */,
 				57D1B44B218D1AB00056A75F /* ViewController.swift */,
-				57D1B44D218D1AB00056A75F /* Main.storyboard */,
+				57D1B45E218D27AC0056A75F /* GalleryInteractor.swift */,
 				57D1B453218D1AB20056A75F /* Assets.xcassets */,
 				57D1B455218D1AB20056A75F /* LaunchScreen.storyboard */,
 				57D1B458218D1AB20056A75F /* Info.plist */,
@@ -127,7 +130,6 @@
 			files = (
 				57D1B457218D1AB20056A75F /* LaunchScreen.storyboard in Resources */,
 				57D1B454218D1AB20056A75F /* Assets.xcassets in Resources */,
-				57D1B44F218D1AB00056A75F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +141,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D1B44C218D1AB00056A75F /* ViewController.swift in Sources */,
+				57D1B45F218D27AC0056A75F /* GalleryInteractor.swift in Sources */,
 				57D1B44A218D1AB00056A75F /* AppDelegate.swift in Sources */,
 				57D1B452218D1AB00056A75F /* Affirm.xcdatamodeld in Sources */,
+				57D1B461218D85B00056A75F /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		57D1B44D218D1AB00056A75F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57D1B44E218D1AB00056A75F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57D1B455218D1AB20056A75F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,7 +283,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38RFG63CR2;
 				INFOPLIST_FILE = Affirm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +302,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38RFG63CR2;
 				INFOPLIST_FILE = Affirm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
