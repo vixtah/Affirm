@@ -60,10 +60,6 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
         for indexPath in indexPaths {
             interactor.getImage(urlString: photos[indexPath.row].url_s ?? "",
                                 cb: {_ in })
-            if indexPath.row == photos.count - 40 {
-                page += 1
-                search(text: curSearch)
-            }
         }
     }
     
@@ -88,7 +84,12 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
                     cell.imageView.image = image
                 }
             }
-        })   
+        })
+        
+        if indexPath.row == photos.count - 50 {
+            page += 1
+            search(text: curSearch)
+        }
         return cell
     }
 }
